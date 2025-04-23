@@ -7,6 +7,8 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
 export default function Login() {
+  console.log("API Key:", process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
